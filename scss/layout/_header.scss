@@ -1,0 +1,85 @@
+
+.navbar-dark .navbar-nav .nav-link  {
+    color: $color-secondary;
+    transition: 0.5s;
+    font-weight: 700;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $color-title;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: $other-font;
+    text-transform: $text-uppercase;
+
+}
+.header__maintitle, .header__title {
+    text-align: center;
+    text-transform: $text-uppercase;
+}
+.header__maintitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: $font-title;
+}
+.header__title {
+    font-size: 1.8rem;
+    color: $color-title;
+    font-family: $font-title;
+    padding-top: 15px;
+    font-weight: 600;
+}
+.header__img {
+    display: block;
+    margin: 30px auto;
+    width: 70%;
+    height: auto;
+}
+.navbar-logo {
+    width: 60px;
+    height: 60px;
+}
+.navbar {
+    padding: 15px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-brand {
+    margin-left: 20px;
+}
+.navbar {
+    background-color: $base-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header__div {
+    width: 80%;
+    margin: 150px auto 30px auto;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse{
+        justify-content: flex-end;
+        margin-right: 70px;
+    }
+    .navbar-brand {
+        margin-left: 70px;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__div {
+        width: 40%;
+    }
+    .header__img {
+        max-width: 400px;
+        max-height: 360px;
+        margin-top: 150px;
+    }
+   
+}

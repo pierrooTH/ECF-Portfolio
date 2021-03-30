@@ -1,0 +1,21 @@
+$base-color: #3A4047;
+$color-secondary: #ededed;
+$color-title: #FEF49C;
+$font-title: 'Roboto', sans-serif;
+$other-font: 'Poppins', sans-serif;
+$text-uppercase: uppercase;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #3A4047;
+    color: #ededed;
+    position: relative;
+
+    
+}
