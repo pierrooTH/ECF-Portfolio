@@ -13,82 +13,65 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/Logo.png" alt="Logo portfolio"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">A propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#competence">Compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       <header class="header">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+          <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/Logo.png" alt="Logo portfolio"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#competence">Compétences</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projets
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Showtrack</a>
+                  <a class="dropdown-item" href="#">Projet 2</a>
+                  <a class="dropdown-item" href="#">Projet 3</a>
+                </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         <div class="header__div">
-          <h1 class="header__maintitle">Pierre Thouvenot</h1>
+          <h1 class="header__maintitle">Thouvenot Pierre</h1>
           <h2 class="header__title">Développeur web et web mobile</h2>
+          <a class="header__btn" href="#competences">En savoir plus</a>
         </div>
-        
-        <img class="header__img" src="img/image-1.png" alt="Image de développeur">
       </header>
 
       <main>
-        <div id="competence">
-          <section class="container">
-            <h3 class="competences__title">Compétences</h3>
-            <div class="row">
-              <div class="col-md-6">
-  
-                <div class="competences__box">
-                <h4 class="box__title">Outils</h4>
-                <img class="box__img" src="img/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio Code">
-                </div>
-        
-              </div>
-              <div class="col-md-6">
-                <div class="competences__box">
-                <h4 class="box__title">Langages</h4>
-              
-                </div>
-        
-              </div>
+        <div id="competences" class="container">
+          <h3 class="competences__title">Compétences</h3>
+          <div class="row">
+            <div class="col-sm-12 col-md-6  competences__border">
+              <h4 class="section__title">Outils</h4>
+              <img class="section__img" src="img/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio Code"> 
+              <img class="section__img" src="img/Openlogo-debianV2.svg.png" alt="Logo Debian">
+              <img class="section__img" src="img/image-git.png" alt="Logo Git"> 
+              <img class="section__img" src="img/image-figma.png" alt="Logo Figma">
+              <img class="section__img" src="img/logo-wordpress.png" alt="Logo Wordpress"> 
             </div>
-          </section>
-        </div>
-        
-        
-            
+            <div class="col-sm-12 col-md-6 competences__border">
+              <h4 class="section__title">Langages</h4>
             </div>
-          </section>
+          </div>
         </div>
-       
-
 
       </main>
-      <footer>
-        <div class="social">
-          <a href=""><img class="social__link"  src="img/image-fb.png" alt="Logo Facebook"></a>
-          <a href=""><img class="social__link" src="img/image-github.png" alt="Logo Github"></a>
-          <a href=""><img class="social__link" src="img/image-linkedin.png" alt="Logo Linkedin"></a>
-        </div>
 
-      </footer>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
