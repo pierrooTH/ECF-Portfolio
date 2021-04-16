@@ -22,7 +22,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">A propos</a>
+                <a class="nav-link" href="#about">A propos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#competences">Compétences</a>
@@ -32,9 +32,9 @@
                   Projets
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Showtrack</a>
-                  <a class="dropdown-item" href="#">Projet 2</a>
-                  <a class="dropdown-item" href="#">Projet 3</a>
+                  <a class="dropdown-item" href="#showtrack">Showtrack</a>
+                  <a class="dropdown-item" href="#calculator">Projet 2</a>
+                  <a class="dropdown-item" href="#quotes">Projet 3</a>
                 </div>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -45,29 +45,69 @@
         <div class="header__div">
           <h1 class="header__maintitle">Thouvenot Pierre</h1>
           <h2 class="header__title">Développeur web et web mobile</h2>
-          <a class="header__btn" href="#competences">En savoir plus</a>
+          <a class="header__btn btn" href="#about">En savoir plus</a>
         </div>
        
       </header>
 
       <main>
-        <div id="competences" class="container">
-          <h3 class="competences__title">Compétences</h3>
-          <div class="row">
-            <div class="col-sm-12 col-md-6  competences__border">
-              <h4 class="section__title">Outils</h4>
-              <img class="section__img" src="img/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio Code"> 
-              <img class="section__img" src="img/Openlogo-debianV2.svg.png" alt="Logo Debian">
-              <img class="section__img" src="img/image-git.png" alt="Logo Git"> 
-              <img class="section__img" src="img/image-figma.png" alt="Logo Figma">
-              <img class="section__img" src="img/logo-wordpress.png" alt="Logo Wordpress"> 
+        <section id="about" class="about">
+            <img class="about__img" src="img/ma_photo.png" alt="">
+            <h2 class="section__title title--underscr">A PROPOS</h3>
+            <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aperiam illo harum rerum est tempora blanditiis saepe eveniet soluta aut.</p>
+            <div class="about__btn">
+              <a class="btn" target="_blank" href="cv/Thouvenot Pierre (2).pdf">Télécharger CV</a>
             </div>
-            <div class="col-sm-12 col-md-6 competences__border">
-              <h4 class="section__title">Langages</h4>
+        </section>
+        <section id="cpt" class="skills">
+          <h2 class="section__title  skills__title">Compétences</h3>
+        </section>
+
+        <section class="projects">
+          <h2 class="section__title projects__title">PROJECTS</h3>
+          <div class="projects__content container">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div id="showtrack" class="card" style="width: 20rem;">
+                <a href="https://showtrack-projet.netlify.app" target="_blank"><img src="img/Showtrack-img.png" class="card-img-top" alt="Projet site web Showtrack"></a>
+                <div class="card-body">
+                  <h4 class="card-title">Showtrack</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-btn">
+                    <a href="https://showtrack-projet.netlify.app" target="_blank" class="btn">Voir</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div id="calculator" class="card" style="width: 20rem;">
+                <a href="https://calculatrice-projet.netlify.app" target="_blank"><img src="img/Calculatrice-projet.png" class="card-img-top card-calc" alt="Projet de calculatrice en HTML/CSS/JS"></a>
+                <div class="card-body">
+                  <h4 class="card-title">Calculatrice</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-btn">
+                    <a href="https://calculatrice-projet.netlify.app" target="_blank" class="btn">Voir</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div id="quotes" class="card" style="width: 20rem;">
+                <a href="https://quotes-chuck-norris.netlify.app" target="_blank"><img src="img/quotes-chuck-norris.png" class="card-img-top" alt="Projet de générateur de citations Chuck Norris"></a>
+                <div class="card-body">
+                  <h4 class="card-title">Générateur de citations</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-btn">
+                    <a href="https://showtrack-projet.netlify.app" target="_blank" class="btn">Voir</a>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+              
             </div>
           </div>
-        </div>
-
+        </section>
       </main>
 
 

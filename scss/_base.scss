@@ -13,9 +13,26 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #191819;
     color: #ededed;
     position: relative;
+}
 
-    
+main {
+    padding-top: 70px;
+    background: linear-gradient(#3A3A3A, #493D5B);
+    overflow: hidden;
+
+}
+
+.section__title {
+    color: $color-title;
+    font-family: $font-title;
+    font-weight: 700;
+}
+.title--underscr::after{
+    content: "";
+    display: block;
+    width: 51px;
+    height: 3px;
+    background-color: $color-secondary;
 }

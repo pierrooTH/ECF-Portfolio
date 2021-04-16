@@ -22,7 +22,7 @@
 .header__title {
     font-size: 1.5rem;
     color: $color-title;
-    font-family: $font-title;
+    font-family: $other-font;
     padding-top: 15px;
     font-weight: 600;
 }
@@ -64,7 +64,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.header__btn {
+.btn {
     display: inline-block;
     margin-top: 30px;
     padding: 15px 20px;
@@ -77,7 +77,7 @@
     font-family: $other-font;
     transition: 1s;
 }
-.header__btn:hover {
+.btn:hover {
     color: $base-color;
     background-color: $color-title;
     text-decoration: none;

@@ -1,0 +1,27 @@
+.about {
+    width: 75%;
+    height: auto;
+    background-color: rgba(87, 84, 92, 0.71);
+    border-radius: 7px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.about__btn {
+    text-transform: uppercase;
+    text-align: center;
+}
+.about__img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+}
+
+.about__paragraph {
+    margin-top: 25px;
+    font-family: $other-font;
+    font-size: 0.7rem;
+}
