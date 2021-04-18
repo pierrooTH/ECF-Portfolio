@@ -14,7 +14,6 @@ html {
 }
 body {
     color: #ededed;
-    position: relative;
 }
 
 main {
@@ -23,16 +22,51 @@ main {
     overflow: hidden;
 
 }
-
 .section__title {
+    position: relative;
+}
+
+.section__title, .section__title--about, .contact__rs {
     color: $color-title;
     font-family: $font-title;
     font-weight: 700;
 }
+.section__title::after {
+    content: "";
+    display: block;
+    width: 51px;
+    height: 3px;
+    background-color: $color-secondary;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 .title--underscr::after{
     content: "";
     display: block;
     width: 51px;
     height: 3px;
     background-color: $color-secondary;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    color: #ededed;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: $other-font;
+}
+.btn:hover {
+    color: $base-color;
+    background-color: $color-title;
+    text-decoration: none;
+    border: 1px solid $color-title;
+    box-shadow: 0px 0px 3px 1px $color-secondary;
 }

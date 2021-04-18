@@ -1,0 +1,50 @@
+.contact__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.contact__form {
+    max-width: 600px;
+    margin: 60px auto;
+}
+.contact__btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.contact__form--btn {
+    margin-top: 0;
+}
+.contact__form--text {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #786794;
+    display: block;
+    margin: 30px auto;
+    width: 100%;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 1px solid $color-title;
+    box-shadow: 0 0 4px 1px $color-title;
+}
+
+.contact__from--msg {
+    height: 150px;
+}
+::placeholder {
+    color: $color-secondary;
+}
+.contact__form--btn {
+    width: 150px;
+    padding: 10px 5px;
+}
+.logo__rs {
+    text-align: center;
+}
+.logo__rs--img {
+    margin: 30px 15px;
+    width: 50px;
+    height: 50px;
+}
+.contact__rs {
+    font-size: 1.5rem;
+}

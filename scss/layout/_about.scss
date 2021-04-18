@@ -23,5 +23,25 @@
 .about__paragraph {
     margin-top: 25px;
     font-family: $other-font;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+   .about{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .desktop__left {
+       width: 50%;
+       margin-left: 100px;
+   }
+   .about__paragraph{
+       font-size: 1rem;
+   }
+   .about__img {
+       width: 180px;
+       height: 180px;
+   }
+
 }

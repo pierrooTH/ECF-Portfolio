@@ -25,7 +25,7 @@
                 <a class="nav-link" href="#about">A propos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#competences">Compétences</a>
+                <a class="nav-link" href="#cpt">Compétences</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,11 +33,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#showtrack">Showtrack</a>
-                  <a class="dropdown-item" href="#calculator">Projet 2</a>
-                  <a class="dropdown-item" href="#quotes">Projet 3</a>
+                  <a class="dropdown-item" href="#calculator">Calculatrice</a>
+                  <a class="dropdown-item" href="#quotes">Générateur de citations</a>
                 </div>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -52,63 +52,92 @@
 
       <main>
         <section id="about" class="about">
+          <div class="desktop__right">
             <img class="about__img" src="img/ma_photo.png" alt="">
-            <h2 class="section__title title--underscr">A PROPOS</h3>
-            <p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aperiam illo harum rerum est tempora blanditiis saepe eveniet soluta aut.</p>
+          </div>
+          <div class="desktop__left">
+            <h2 class="section__title--about title--underscr">A PROPOS</h2>
+            <p class="about__paragraph">Après avoir obtenu une licence en Psychologie, j'ai souhaité me réorienter dans un domaine qui me correspondait davantage : <strong>l'informatique</strong>. Etant un passionné des nouvelles technologies, j'ai alors candidaté et réussi à intégrer une formation pour devenir <strong>devéloppeur web et web mobile</strong>. <br><br> Je suis actuellement à la recherche d'une opportunité qui mettra en œuvre les compétences que j'ai acquises durant la formation suivie à <strong>Pop School</strong>.
+            <br><br> Ci-dessous vous trouverez mon <strong>CV</strong> à télécharger : </p>
             <div class="about__btn">
-              <a class="btn" target="_blank" href="cv/Thouvenot Pierre (2).pdf">Télécharger CV</a>
+              <a class="btn" target="_blank" href="cv/Thouvenot Pierre (3).pdf">Télécharger CV</a>
             </div>
+          </div>
         </section>
         <section id="cpt" class="skills">
-          <h2 class="section__title  skills__title">Compétences</h3>
+          <h2 class="section__title  skills__title">Compétences</h2>
         </section>
 
         <section class="projects">
-          <h2 class="section__title projects__title">PROJECTS</h3>
+          <h2 class="section__title projects__title">PROJETS</h2>
           <div class="projects__content container">
             <div class="row">
               <div class="col-md-6 col-lg-4">
-                <div id="showtrack" class="card" style="width: 20rem;">
+                <div id="showtrack" class="card"">
                 <a href="https://showtrack-projet.netlify.app" target="_blank"><img src="img/Showtrack-img.png" class="card-img-top" alt="Projet site web Showtrack"></a>
                 <div class="card-body">
-                  <h4 class="card-title">Showtrack</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h3 class="card-title">Showtrack</h3>
+                  <p class="card-text">Un des premiers projets réalisé avec la formation.<br>Ce TP consistait à reproduire un blog à partir d'une image. Le site devait être 100% responsive sur tout type d'écrans.</p>
                   <div class="card-btn">
-                    <a href="https://showtrack-projet.netlify.app" target="_blank" class="btn">Voir</a>
+                    <a href="https://showtrack-projet.netlify.app" target="_blank" class="btn btn--card">Voir</a>
                   </div>
                 </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
-                <div id="calculator" class="card" style="width: 20rem;">
+                <div id="calculator" class="card"">
                 <a href="https://calculatrice-projet.netlify.app" target="_blank"><img src="img/Calculatrice-projet.png" class="card-img-top card-calc" alt="Projet de calculatrice en HTML/CSS/JS"></a>
                 <div class="card-body">
-                  <h4 class="card-title">Calculatrice</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h3 class="card-title">Calculatrice</h3>
+                  <p class="card-text">Projet de calculatrice en utilisant l'HTML, le CSS et le JavaScript. La difficulté du projet résidait à trouver l'algorithme qui permettait de faire fonctionner la calculatrice.</p>
                   <div class="card-btn">
-                    <a href="https://calculatrice-projet.netlify.app" target="_blank" class="btn">Voir</a>
+                    <a href="https://calculatrice-projet.netlify.app" target="_blank" class="btn btn--card">Voir</a>
                   </div>
                 </div>
                 </div>
               </div>
               <div class="col-md-12 col-lg-4">
-                <div id="quotes" class="card" style="width: 20rem;">
+                <div id="quotes" class="card">
                 <a href="https://quotes-chuck-norris.netlify.app" target="_blank"><img src="img/quotes-chuck-norris.png" class="card-img-top" alt="Projet de générateur de citations Chuck Norris"></a>
                 <div class="card-body">
-                  <h4 class="card-title">Générateur de citations</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h3 class="card-title">Générateur de citations</h3>
+                  <p class="card-text">Ce projet consistait à réaliser un générateur de citation. La difficulté du projet était de modifier les citations ainsi que la couleur de l'arrière plan, du bouton et du texte aléatoirement. </p>
                   <div class="card-btn">
-                    <a href="https://quotes-chuck-norris.netlify.app" target="_blank" class="btn">Voir</a>
+                    <a href="https://quotes-chuck-norris.netlify.app" target="_blank" class="btn btn--card">Voir</a>
                   </div>
                 </div>
               </div>
-
               </div>
-              
             </div>
           </div>
         </section>
+        <section id="contact" class="contact container">
+          <h2 class="section__title contact__title">Contact</h2>
+          <form class="contact__form" action="">
+            <input type="text" class="contact__form--text contact__form--name" placeholder="Nom">
+            <input type="email" class="contact__form--text contact__form--email" placeholder="Email">
+            <textarea class="contact__form--text contact__from--msg" placeholder="Message"></textarea>
+            <div class="contact__btn">
+              <input type="submit" class="contact__form--btn btn" value="Envoyer">
+            </div>
+          </form>
+          <div class="container">
+            <h2 class="contact__rs title--underscr">Me suivre sur les réseaux</h2>
+            <div class="logo__rs">
+              <a href="https://www.linkedin.com/in/pierre-thouvenot-7007a1209/" target="_blank"><img class="logo__rs--img" src="img/linkedin-1.svg" alt="Logo Linkedin en SVG"></a>
+              <a href="https://github.com/pierrooTH" target="_blank"><img class="logo__rs--img" src="img/github-1.svg" alt="Logo Github en SVG"></a>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <div class="nav__arrow">
+            <a href="index.html"><img class="img-nav__arrow" src="img/arrow.png" alt="Flèche qui permet de revenir en haut de page"></a>
+          </div>
+          <p class="footer__paragraph">Copyright © 2021 Thouvenot Pierre</p>
+        </footer>
+
       </main>
+
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

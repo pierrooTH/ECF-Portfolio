@@ -5,7 +5,10 @@
 
 .card {
     background-color: #5B4E6D;
-    margin: 30px auto;
+    margin: 40px auto;
+    border-radius: 5px;
+    width: 20rem;
+    height: 500px;
 }
 .card-title {
     margin-top: 10px;
@@ -26,4 +29,15 @@
 }
 .card-img-top {
     height: 200px;
+}
+.btn--card {
+    width: 150px;
+    padding: 10px 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 15rem;
+        height: 550px;
+    }
 }

@@ -1,10 +1,17 @@
-.social__link {
-    width: 44px;
-    height: 44px;
-    padding: 10px;
+.footer__paragraph {
+    text-align: center;
+    font-size: 1rem;
+    color: $color-secondary;
+    margin: 40px 0 20px 0;
 }
-.social {
+.nav__arrow {
     display: flex;
     justify-content: flex-end;
-    margin-right: 15px;
+    margin-right: 100px;
+}
+@media screen and (max-width: 800px) {
+    .nav__arrow {
+        display: none;
+
+    }
 }
