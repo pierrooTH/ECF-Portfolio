@@ -1,43 +1,99 @@
-.projects__title {
-    margin: 60px 0 30px 0;
-    text-align: center;
+.project__card {
+    margin: 50px 0 30px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
-
 .card {
+    position: relative;
+    max-width: 300px;
+    height: 160px;
     background-color: #5B4E6D;
-    margin: 40px auto;
-    border-radius: 5px;
-    width: 20rem;
-    height: 500px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
 }
-.card-title {
-    margin-top: 10px;
+.card:hover {
+    height: 520px;
+}
+.card__img {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.card__img img {
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.card__content {
+    position: relative;
+    margin-top: -120px;
+    padding: 10px 15px;
     text-align: center;
-    font-family: $font-title;
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: #ededed;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
-.card-text {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    font-family: $other-font;
+.card:hover .card__content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
 }
 
-.card-btn {
+.card__btn {
     text-align: center;
     text-transform: uppercase;
+    margin: 20px 0;
 }
-.card-img-top {
-    height: 200px;
-}
-.btn--card {
+.card--btn {
     width: 150px;
     padding: 10px 5px;
 }
+.card__title {
+    font-family: $font-title;
+    color: $color-title;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.card__paragraph {
+    font-family: $other-font;
+    font-size: 0.8rem;
 
-@media screen and (max-width: 400px) {
-    .card {
-        width: 15rem;
-        height: 550px;
+}
+.projects__title {
+    margin: 70px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.projects {
+    margin-top: 40px;
+}
+.card__date {
+    color: $color-secondary;
+    text-align: center;
+}
+@media screen and (max-width: 380px) {
+    .card:hover {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .card:hover {
+        height: 700px;
     }
 }

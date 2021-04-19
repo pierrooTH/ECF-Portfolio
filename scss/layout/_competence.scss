@@ -1,34 +1,35 @@
-.skills {
-    position: relative;
-}
 .skills__title {
+    margin: 70px 0;
+}
+.skills__title, .skills__subtitle {
     text-align: center;
-    margin-top: 60px;
     text-transform: uppercase;
 }
+.skills__subtitle {
+    font-size: 1.3rem;
+}
+.tools {
+    margin-top: 30px;
+}
+.tools, .lang {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tools__content, .lang__content {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tools__img, .lang__img {
+    width: 45px;
+    height: 40px;
+    margin: 25px;
+}
 
-.title--underscr--skills::after{
-    content: "";
-    display: block;
-    width: 51px;
-    height: 3px;
-    background-color: #ededed;
-    position: absolute;
-    top: 30px;
-    left: 96px;
-}
-.skills__tools--content img {
-    width: 60%;
-    display: block;
-    margin: 50px auto;
-}
-.skills__tools--title {
-    margin-top: 20px;
-    text-align: center;
-}
-h3 {
-    font-size: 1.25rem;
-}
-h4 {
-    font-size: 0.9rem;
+.lang--sub {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
