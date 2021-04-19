@@ -73,6 +73,7 @@
 .card__paragraph {
     font-family: $other-font;
     font-size: 0.8rem;
+    margin-top: 10px;
 
 }
 .projects__title {
@@ -87,7 +88,7 @@
     color: $color-secondary;
     text-align: center;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 370px) {
     .card:hover {
         height: 600px;
     }

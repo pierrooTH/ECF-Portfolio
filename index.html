@@ -163,10 +163,10 @@
         </section>
         <section id="contact" class="contact container">
           <h2 class="section__title contact__title">Contact</h2>
-          <form class="contact__form">
-            <input type="text" class="contact__form--text contact__form--name" placeholder="Nom">
-            <input type="email" class="contact__form--text contact__form--email" placeholder="Email">
-            <textarea class="contact__form--text contact__from--msg" placeholder="Message"></textarea>
+          <form class="contact__form" name="contact" method="POST" data-netlify="true">
+            <input type="text" name="name" class="contact__form--text contact__form--name" placeholder="Nom">
+            <input type="email" name="email" class="contact__form--text contact__form--email" placeholder="Email">
+            <textarea name="message" class="contact__form--text contact__from--msg" placeholder="Message"></textarea>
             <div class="contact__btn">
               <input type="submit" class="contact__form--btn btn" value="Envoyer">
             </div>
