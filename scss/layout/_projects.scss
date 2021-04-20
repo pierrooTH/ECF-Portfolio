@@ -19,10 +19,11 @@
     transition: 0.3s ease-in-out;
     cursor: pointer;
     margin: 50px 10px;
+    box-shadow: 10px 10px 3px 1px #3f364b;
 
 }
 .card:hover {
-    height: 560px;
+    height: 540px;
 }
 .card__img {
     position: relative;
@@ -33,11 +34,13 @@
     transform: translateX(-50%);
     z-index: 99;
 }
-.card__img img {
+.showtrack__img, .norris__img, .calc__img {
     max-width: 100%;
     border-radius: 4px;
+    box-shadow: 7px -7px 3px 0px rgba(0,0,0,0.2);
 
 }
+
 .card__content {
     position: relative;
     margin-top: -120px;
