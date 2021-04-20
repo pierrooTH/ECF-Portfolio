@@ -11,7 +11,7 @@
 .card {
     position: relative;
     max-width: 300px;
-    height: 160px;
+    height: 200px;
     background-color: #5B4E6D;
     padding: 20px 15px;
     display: flex;
@@ -22,7 +22,7 @@
 
 }
 .card:hover {
-    height: 520px;
+    height: 560px;
 }
 .card__img {
     position: relative;
@@ -57,7 +57,7 @@
 .card__btn {
     text-align: center;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 .card--btn {
     width: 150px;
@@ -87,6 +87,14 @@
 .card__date {
     color: $color-secondary;
     text-align: center;
+}
+.card__arrow {
+    text-align: center;
+    margin: 15px 0;
+    opacity: 1;
+}
+.card:hover .card__arrow {
+    opacity: 0;
 }
 @media screen and (max-width: 370px) {
     .card:hover {
