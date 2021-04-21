@@ -16,15 +16,14 @@ scroll.reveal('.header__title', {
 });
 scroll.reveal('.section__title--about', {
     duration: 1500,
-    origin: 'left',
-    delay: 500,
+    origin: 'top',
+    delay: 300,
     reset: true,
-    distance: '70px'
+    distance: '100px'
 });
 scroll.reveal('.about__img', {
-    origin: 'top',
+    origin: 'left',
     duration: 1500,
-    delay: 300,
     reset: true,
     distance: '100px'
 });
@@ -33,7 +32,7 @@ scroll.reveal('.about__paragraph', {
     origin: 'right',
     delay: 500,
     reset: true,
-    distance: '90px'
+    distance: '120px'
 });
 scroll.reveal('.about__btn', {
     duration: 1500,
@@ -51,17 +50,17 @@ scroll.reveal('.header__btn', {
 scroll.reveal('.tools', {
     duration: 2000,
     origin: 'top',
-    distance: '70px'
+    distance: '100px'
 }, 150);
 
 scroll.reveal('.lang', {
     duration: 2000,
-    distance: '70px'
+    distance: '100px'
 }, 150);
 
 scroll.reveal('.project__card', {
     duration: 2000,
     origin: 'left',
-    distance: '50px'
+    distance: '150px'
 }, 150);
 
