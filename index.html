@@ -10,11 +10,13 @@
     <link rel="manifest" href="img/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <meta name="description" content="Actuellement en formation Dévéloppeur Web et web mobile chez Pop School. Je recherche à présent une opportunité de stage, d'une durée de 2 à 6 mois, afin de mettre en pratique les compétences acquises de cette formation.">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
 <body>
+      <!-- Mise en place de la navbar grâce a Bootstrap -->
       <header id="home" class="header">
         <nav class="navbar navbar-expand-xl navbar-dark">
           <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/Logo.png" alt="Logo portfolio"></a>
@@ -50,10 +52,12 @@
           <a class="header__btn btn" href="#about">En savoir plus</a>
         </div> 
       </header>
+      <!-- Partie principale du portfolio -->
       <main>
+        <!-- Section de description -->
         <section id="about" class="about">
           <div class="desktop__right">
-            <img class="about__img" src="img/ma_photo.png" alt="">
+            <img class="about__img" src="img/ma_photo.png" alt="Photo de moi afin de me représenter">
           </div>
           <div class="desktop__left">
             <h2 class="section__title--about title--underscr">A PROPOS</h2>
@@ -64,9 +68,12 @@
             </div>
           </div>
         </section>
+        <!-- Section où je recense toutes les compétences 
+        apprises grâce à la formation -->
         <section id="cpt" class="skills">
           <h2 class="section__title  skills__title">Compétences</h2>
           <h3 class="skills__subtitle">Outils</h3>
+          <!-- Les outils que je sais utiliser -->
           <div class="tools">
             <div class="tools__content">
               <img class="tools__img" src="img/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="Logo Visual Studio Code">
@@ -90,6 +97,7 @@
             </div>
           </div>
           <h3 class="skills__subtitle lang--sub">Langages</h3>
+          <!-- Ici, ce sont les langages que j'ai appris (ou que je vais apprendre) -->
           <div class="lang">
             <div class="lang__content">
               <img class="lang__img" src="img/html.png" alt="Logo HTML">
@@ -119,6 +127,7 @@
             </div>
           </div>
         </section>
+        <!-- Section où je présente tous les projets réalisés à ce jour -->
         <section class="projects">
           <h2 class="section__title projects__title">Projets</h2>
           <div class="project__card">
@@ -172,6 +181,7 @@
             </article>
             </div>
         </section>
+        <!-- Section de contact -->
         <section id="contact" class="contact container">
           <h2 class="section__title contact__title">Contact</h2>
           <form class="contact__form" name="contact" method="POST" data-netlify="true">
@@ -182,6 +192,7 @@
               <input type="submit" class="contact__form--btn btn" value="Envoyer">
             </div>
           </form>
+          <!-- Présence de liens vers mes réseaux : Github et Linkedin -->
           <div class="container">
             <h2 class="contact__rs title--underscr">Me suivre sur les réseaux</h2>
             <div class="logo__rs">
@@ -190,11 +201,13 @@
             </div>
           </div>
         </section>
+        <!-- Mise en place d'une flèche sur écran d'ordinateur afin de pouvoir revenir à la page d'accueil facilement -->
         <footer>
           <div class="nav__arrow">
             <a href="#home"><img class="img-nav__arrow" src="img/arrow.png" alt="Flèche qui permet de revenir en haut de page"></a>
           </div>
-          <p class="footer__paragraph">Copyright © 2021 Thouvenot Pierre</p>
+          <!-- Partie copyright -->
+          <p class="footer__paragraph">Copyright © 2021 - Portfolio - Thouvenot Pierre</p>
         </footer>
       </main>
       <script src="js/app.js"></script>
