@@ -1,3 +1,4 @@
+
 .skills__title {
     margin: 70px 0;
 }
@@ -30,7 +31,6 @@
 }
 
 .lang--sub {
-    margin-top: 40px;
     margin-bottom: 30px;
 }
 .css--img {
@@ -38,4 +38,23 @@
 }
 .js--img {
     width: 60px;
+}
+
+.skills__tools, .skills__lang {
+    width: 80%;
+    padding: 30px 0;
+    height: auto;
+    background-color: #554f5c;
+    border-radius: 7px;
+    margin: 0 auto;
+    box-shadow: 8px 8px 3px 1px #433e49;
+}
+.skills__lang {
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 900px) {
+    .skills__tools, .skills__lang {
+        width: 50%;
+    }
 }
