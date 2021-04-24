@@ -58,7 +58,7 @@ scroll.reveal('.lang', {
     distance: '100px'
 }, 150);
 
-scroll.reveal('.project__card', {
+scroll.reveal('.projects__card', {
     duration: 2000,
     origin: 'left',
     distance: '150px'

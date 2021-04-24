@@ -8,25 +8,23 @@
     margin-right: auto;
     margin-top: 20px;
     box-shadow: 8px 8px 3px 1px rgba(54, 52, 56, 0.507);
-}
-.about__btn {
-    text-transform: uppercase;
-    text-align: center;
-}
-.about__img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
 
+    &__btn {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px; 
+    }
+    &__paragraph {
+        margin-top: 25px;
+        font-family: $other-font;
+        font-size: 0.8rem;
+    }
 }
-
-.about__paragraph {
-    margin-top: 25px;
-    font-family: $other-font;
-    font-size: 0.8rem;
-}
-
 @media screen and (min-width: 800px) {
    .about{
        display: flex;
@@ -44,5 +42,4 @@
        width: 180px;
        height: 180px;
    }
-
 }

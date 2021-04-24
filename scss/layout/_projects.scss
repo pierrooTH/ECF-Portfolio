@@ -1,12 +1,21 @@
-.project__card {
-    margin: 50px 0 30px 0;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
+.projects {
+    margin-top: 40px;
+
+    &__title {
+        margin: 70px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__card {
+        margin: 50px 0 30px 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
 }
 .card {
     position: relative;
@@ -21,19 +30,69 @@
     margin: 50px 10px;
     box-shadow: 10px 10px 3px 1px #3f364b;
 
+    &:hover{
+        height: 540px;
+    }
+
+    &__img {
+        position: relative;
+        width: 260px;
+        height: 200px;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+    }
+    &__content {
+        position: relative;
+        margin-top: -120px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #ededed;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    &:hover &__content {
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+    }
+    &__btn {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 0 0;
+    }
+    &--btn {
+        width: 150px;
+        padding: 10px 5px;
+    }
+    &__title {
+        font-family: $font-title;
+        color: $color-title;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    &__paragraph {
+        font-family: $other-font;
+        font-size: 0.8rem;
+        margin-top: 10px;
+    }
+    &__date {
+        color: $color-secondary;
+        text-align: center;
+    }
+    &__arrow {
+        text-align: center;
+        margin: 15px 0;
+        opacity: 1;
+    }
+    &:hover &__arrow {
+        opacity: 0;
+    }
 }
-.card:hover {
-    height: 540px;
-}
-.card__img {
-    position: relative;
-    width: 260px;
-    height: 200px;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
-}
+
 .showtrack__img, .norris__img, .calc__img {
     max-width: 100%;
     border-radius: 4px;
@@ -41,64 +100,6 @@
 
 }
 
-.card__content {
-    position: relative;
-    margin-top: -120px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #ededed;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-.card:hover .card__content {
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-}
-
-.card__btn {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 20px 0 0 0;
-}
-.card--btn {
-    width: 150px;
-    padding: 10px 5px;
-}
-.card__title {
-    font-family: $font-title;
-    color: $color-title;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.card__paragraph {
-    font-family: $other-font;
-    font-size: 0.8rem;
-    margin-top: 10px;
-
-}
-.projects__title {
-    margin: 70px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-.projects {
-    margin-top: 40px;
-}
-.card__date {
-    color: $color-secondary;
-    text-align: center;
-}
-.card__arrow {
-    text-align: center;
-    margin: 15px 0;
-    opacity: 1;
-}
-.card:hover .card__arrow {
-    opacity: 0;
-}
 @media screen and (max-width: 370px) {
     .card:hover {
         height: 600px;
