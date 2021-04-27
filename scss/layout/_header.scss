@@ -27,7 +27,14 @@
 .navbar-brand {
     margin-left: 20px;
 }
-
+.dropdown-menu {
+    background-color: $base-color;
+}
+.dropdown-item {
+    color: $color-title;
+    font-family: $other-font;
+    font-weight: 600;
+}
 .header {
     height: 100vh;
     width: 100%;
